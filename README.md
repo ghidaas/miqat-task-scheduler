@@ -137,15 +137,6 @@ db/changelog/db.changelog-master.xml
 
 ---
 
-## ⚠️ Important Notes
-
-* Database runs via Docker on port `5434`
-* Application uses dynamic port (`server.port=0`)
-* Liquibase runs automatically on startup
-
-
----
-
 ## 👩‍💻 Author
 
 **Ghaida Alqahtani**
