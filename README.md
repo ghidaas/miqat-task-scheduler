@@ -12,7 +12,6 @@ Miqat Task Scheduler is a backend service that allows users to:
 * Track task lifecycle in real-time
 * Execute background jobs asynchronously
 * Persist data reliably using PostgreSQL
-* Manage schema evolution with Liquibase
 
 ---
 
@@ -115,45 +114,7 @@ http://localhost:XXXXX/swagger-ui/index.html
 ```
 
 ---
-
-## 📌 API Endpoints
-
-### ➕ Create Task
-
-```
-POST /user/tasks
-
-```json
-{
-  "name": "Send Email",
-  "description": "Send welcome email to user",
-  "scheduledAt": "2026-05-05T10:00:00"
-}
-```
-
-### 📋 Get All Tasks
-
-```
-GET /user/tasks
-```
-
-### 🔍 Get Task by ID
-
-```
-GET /user/tasks/{id}
-```
-
----
-
-## 🔄 Task Lifecycle
-
-```text
-PENDING → RUNNING → DONE
-              ↘ FAILED
-```
-
----
-
+ة
 ## 🧩 Database Migration
 
 Handled automatically via Liquibase.
