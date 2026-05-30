@@ -14,10 +14,9 @@ class DatabaseConfig {
     @Bean
     fun dataSource(): HikariDataSource {
         val config = HikariConfig().apply {
-            jdbcUrl         = System.getenv("DB_URL")
-                ?: "jdbc:postgresql://localhost:5432/task_scheduler"
-            username        = System.getenv("DB_USER")
-            password        = System.getenv("DB_PASSWORD")
+            jdbcUrl         =  "jdbc:postgresql://localhost:5432/task_scheduler"
+            username        = "postgres"
+            password        = "password"
             driverClassName = "org.postgresql.Driver"
             maximumPoolSize = 10
             minimumIdle     = 2
